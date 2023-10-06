@@ -88,25 +88,31 @@ function App() {
 
   var tips = ""
   var img = sun
+  var condition_affiche = ""
   switch (condition) {
     case "windy":
       tips = "Attention a ne pas vous envoler"
       img = wind
+      condition_affiche = "Venteux"
       break;
     case "sunny":
         tips = "Attention le soleil il brule "
         img = sun
+        condition_affiche = "Ensoleillé"
         break;
         case "stormy":
           tips = "Restez chez vous et regardez les lumières"
           img = thunder
+          condition_affiche = "Orageux"
           break;
           case "cloudy":
             tips = "Le ciel nous tombe sur la tête"
             img = cloud
+            condition_affiche = "Nuageux"
             break;
             case "rainy":
               tips = "L'eau ca mouille"
+              condition_affiche = "Pluvieux"
               img = rain
               break;
     default:
@@ -117,7 +123,7 @@ function App() {
 
 
   return (
-    <div style={{ backgroundColor: '#76CDCD', color: '#5484BA', paddingLeft: '75px', paddingRight: '75px', padding: '35px',   borderRadius: '10px' 
+    <div style={{ backgroundColor: '#D5F5F5', color: '#5484BA', paddingLeft: '75px', paddingRight: '75px', padding: '35px',   borderRadius: '10px' 
   }}>
       <div >
 
@@ -141,7 +147,7 @@ function App() {
   
 
     <h1> {temperature}°C </h1>
-    <h3> {condition} </h3>
+    <h3> {condition_affiche} </h3>
    
 
   </div>
