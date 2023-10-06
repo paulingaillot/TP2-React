@@ -1,3 +1,41 @@
+
+
+.input-style {
+  border: 1px solid transparent; /* Cache la bordure par défaut */
+  color: #333; /* Couleur du texte */
+  background-color: #FFFFFF; /* Couleur de l'arrière-plan */
+  border-end-end-radius: 5px; /* Coins arrondis */
+  font-size: 16px; /* Taille du texte */
+  padding: 10px; /* Espace intérieur de l'input */
+
+}
+
+/* Pour les balises <hr> à l'intérieur de .weather-container */
+.weather-container hr {
+  flex : 0;
+  width: 100%;
+  margin: 0; /* Réinitialise la marge par défaut de la balise <hr> */
+}
+
+body {
+  background-color: white;
+}
+
+/* Style CSS */
+.weather-container {
+  display: flex;
+  align-items: center;
+}
+
+.weather-text {
+  flex: 1; /* Le texte prendra tout l'espace disponible */
+}
+
+.weather-image {
+  margin-left: 20px; /* Marge à gauche de l'image */
+}
+
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
